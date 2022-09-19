@@ -170,10 +170,7 @@ bool functionIdentifier(char *str)
 		else if (str[i] >= 'A' && str[i] <= 'Z')
 			i++;
 		else
-		{
-			// printf("reproved char: '%c'\n", str[i]);
 			return (false);
-		}
 	}
 
 	return (true);
@@ -195,10 +192,7 @@ bool variableIdentifier(char *str)
 		else if (str[i] >= 'A' && str[i] <= 'Z')
 			i++;
 		else
-		{
-			// printf("reproved char: '%c'\n", str[i]);
 			return (false);
-		}
 	}
 	return (true);
 }
