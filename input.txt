@@ -1,0 +1,4 @@
+function mostrar($testando1){
+    if($testando2 >= $value !== $teste)
+    $variavel++;
+}
