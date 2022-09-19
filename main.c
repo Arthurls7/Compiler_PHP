@@ -56,6 +56,10 @@ tDelimiter delimiters[40] = {
 	{'|'},
 	{'?'},
 	{'~'},
+	{'"'},
+	{'.'},
+	//@ eh invalido
+	{'@'},
 	{ENDSTRUCT}};
 
 typedef struct operator{
@@ -159,7 +163,7 @@ bool isTripleOperator(char ch1, char ch2, char ch3)
 bool functionIdentifier(char *str)
 {
 	int i = 0;
-	while (i < strlen(str) - 2)
+	while (i < strlen(str)-1)
 	{
         if(str[i] == '_')
             i++;
